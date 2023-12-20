@@ -1,0 +1,117 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #fae8e8;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  background-image: url('./images/bg-pattern-desktop.svg');
+  background-position: top -10px right -10px;
+  background-repeat: no-repeat;
+}
+
+
+.content {
+  max-width: 50%;
+  color: hsl(0, 6%, 24%);
+}
+
+.content h1 {
+  color: hsl(0, 36%, 70%);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.coming-soon {
+  font-weight: 400;
+  color: black;
+}
+
+.logo {
+  display: block;
+  margin: 0 150px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+h1 {
+  font-size: 72px;
+  color: #b09e99;
+  margin-top: 30%;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 16px;
+  color: #9f7a49;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.email-form {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.email-form input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  padding: 20px;
+  margin-right: -50px;
+  font-size: 16px;
+  outline: none;
+  width: 400px;
+}
+
+.email-form button {
+  border: none;
+  border-radius: 35px;
+  padding: 20px 35px;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 1006px) {
+  .container {
+    flex-direction: column-reverse;
+    padding-left: 0px
+  }
+
+  .logo {
+    position: relative;
+    top: 0;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 5% 0;
+  }
+
+  .content, .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+}
